@@ -1,0 +1,115 @@
+html,body{	
+     font-family: "Quicksand", sans-serif;
+     font-size: 62.5%;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+	outline: none;
+}
+::-moz-placeholder {
+	color: #666;
+	font-weight: 300;
+	opacity: 1;
+}
+
+      
+.hotlink {
+  background-color: #92c669;
+	color: white;
+	padding: 14px 25px;
+	text-align: right;
+	text-decoration: none;
+	display: inline-block;
+	border-width: 1px;
+	border-radius: 0px;
+	
+   
+  }
+  
+  .btn-text-left{
+	  text-align: left;	
+	margin-left: 25px;
+	width: auto;
+
+  }
+  
+  .hotlink:hover {
+    background-color: #5BB318
+  }
+
+
+ 
+  .module, .contact-card {
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px 4px #cccdd0;
+    background-color: #fff;
+  }
+  .module__heading, .contact-card__name {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .module__sub-hed, .contact-card__title {
+    color: #aaa;
+    font-size: 13px;
+  }
+  
+  .avatar-thumb, .contact-card__thumb {
+    border-radius: 50%;
+    height: 40px;
+    width: 40%;
+    margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 15px;
+  }
+  
+  .button-primary, .contact-card__btn-message {
+    height: 28px;
+    padding: 0 16px;
+    border: 1px solid #5BB318;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    line-height: 0;
+    background-color: #92c669;
+    
+  }
+  .button-primary:focus, .contact-card__btn-message:focus, .button-primary:hover, .contact-card__btn-message:hover {
+    background-color: #5BB318;
+    color: #fff;
+  }
+  
+  .contact-card {
+    display: grid;
+    grid-template-columns: 0.7fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    max-width: 420px;
+  }
+  .contact-card__thumb {
+    grid-column: 1;
+    grid-row: 1/4;
+  }
+  .contact-card__name {
+    margin: 5px 0 0;
+  }
+  .contact-card__title {
+    margin: 0;
+  }
+  .contact-card__btn-message {
+    justify-self: start;
+  }
+  
+.page-footer{
+  background:black;
+  color: rgb(0, 0, 0);
+  padding: 20px 0 20px;
+}
+
+.footer-copyright{
+  color: rgb(0, 0, 0);
+  padding: 5px 0;
+}
+

@@ -1,0 +1,171 @@
+body {
+  background: linear-gradient(
+    264deg,
+    rgb(252, 252, 252) 0%,
+    rgb(254, 253, 253) 49%,
+    rgb(251, 249, 249) 100%
+  );
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+#container {
+  margin: auto;
+}
+
+.header h1 {
+  text-align: center;
+  background: -webkit-linear-gradient(#66e370bd, #47b460d2);
+
+  -webkit-text-fill-color: transparent;
+  font-size: 4.5em;
+  font-family: 'Parisienne', cursive;
+  margin-bottom: 15px;
+}
+.header p {
+  text-align: center;
+  background: -webkit-linear-gradient(#5bb318, #5bb318);
+
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.grid-item {
+  display: inline-block;
+  height: 259px;
+
+  overflow: hidden;
+  text-align: center;
+  width: 400px;
+}
+.grid-item img {
+  width: 90%;
+  height: 90%;
+  transition: 0.9s;
+}
+.grid-item img:hover {
+  filter: none;
+}
+
+.isotope-pager .pager {
+  display: inline-block;
+}
+.filters {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 35px;
+  padding-top: 20px;
+  background: #ffffff;
+}
+
+.filters ul {
+  list-style: none;
+  margin: 0 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.filters li {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.filters li a {
+  color: #b6b6b6;
+  text-decoration: none;
+}
+.filters li a:hover {
+  color: #000407;
+}
+
+.filters li:hover {
+  border-radius: 15px;
+}
+
+.filters li.active a {
+  color: black;
+  border: 1px solid #5bb318;
+  border-radius: 1px;
+
+  padding: 10px 25px;
+}
+
+.isotope-pager a {
+  margin: 6px 1px;
+  display: inline-block;
+  width: 50px;
+  /* height: 60px; */
+  line-height: 31px;
+  color: #f1f1f1;
+  font-weight: 600;
+  transition: 0.3s;
+  /* position: relative; */
+  /* padding-right: 26px; */
+  box-shadow: -1px 1px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  background-color: #232323;
+  border: 0.5px solid #5bb318;
+  text-decoration: none;
+}
+
+.isotope-pager a:hover {
+  color: #f1f1f1;
+  border: 0.5px solid #5bb318;
+  box-shadow: -1px 1px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.isotope-pager .active {
+  color: #5bb318 !important;
+  box-shadow: -1px 1px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  background-color: #f1f1f1;
+  border: 1px dotted #5bb318;
+}
+
+.isotope-pager .prev {
+  border-radius: 30px 0 0 30px;
+}
+
+.isotope-pager .next {
+  border-radius: 0 30px 30px 0;
+}
+
+.isotope-pager a::before,
+.isotope-pager a:after {
+  content: '';
+  position: absolute;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+.isotope-pager .num::before,
+.next::before {
+  border-right: 20px solid #000407;
+  right: 100%;
+}
+
+.isotope-pager .num:after,
+.prev:after {
+  border-right: 20px solid #f1f1f1;
+  right: 0;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
